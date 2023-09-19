@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    background-color: black;
+}
+
+.dado{
+    display: block;
+    width: 583px;
+    height: 374px;
+    margin: 120px auto 0 auto;
+}
+.legenda{
+    color: white;
+    font-weight: 100;
+    font-size: 10px;
+    text-align: center;
+}
+.texto{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    margin-bottom: 29px;
+    margin-top: 126px;
+}
+.input{
+    margin-left: calc(50% - 389px);
+}
+
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
+#min{
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 40px;
+    font-weight: 400;
+    margin-right: 62px;
+    color: white;
+    padding-left: 16px;
+    cursor: pointer;   
+}
+#min::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+#max{
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.25);
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    padding-left: 16px;
+    cursor: pointer;
+}
+#max::placeholder{
+    color: rgba(255, 255, 255, 1);
+}
+button{
+    display: block;
+    margin: 79px auto 0;
+    cursor: pointer;
+    width: 342px;
+    height: 74px;
+    border-radius: 14px;
+    box-shadow: 0px 20px 40px rgba(174, 195, 70, 0.35);
+    background-color: rgba(174, 195, 70, 1);
+    border: none;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+button:hover{
+    filter: brightness(110%);
+}
+button:active{
+    filter: brightness(130%);
+}
