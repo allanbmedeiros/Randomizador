@@ -6,6 +6,11 @@ function generateNumber(){
     const min = Math.ceil(document.querySelector("#min").value)  
     const max = Math.floor(document.querySelector("#max").value)
 
+    if (min >= max){ //utilizando o operador de comparação >= coloquei a condição que: se min for maior ou igual o valor
+                     //max aparecer um alerta avisando para concertar. caso não seja rodar o else.
+        alert("O valor Mínimo tem que ser MENOR que o valor Máximo!")
+    }
+    else{
     //coloquei em uma variavel para poder monstrar o resultado
     //mas a formula tem q ser do jeito q foi feito após a variavel
     //lembrando que nessa formula (por ter colocado o ceil e floor acima) é possivel sortear o numero
@@ -14,6 +19,8 @@ function generateNumber(){
     const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
     alert(result)
+    }
+    
 }
 
 botao.addEventListener("click", generateNumber)
